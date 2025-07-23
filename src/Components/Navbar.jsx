@@ -34,6 +34,18 @@ const Navbar = () => {
                     Home
                   </NavLink>
                 </li>
+                 <li>
+                  <NavLink
+                    to="/propertyListing"
+                    className={({ isActive }) =>
+                      `capitalize block ${
+                        isActive ? "bg-[#5AA7A0] text-white" : "text-white"
+                      }  lg:border-0 lg:px-3 rounded-lg lg:pb-0.5`
+                    }
+                  >
+                    property listing
+                  </NavLink>
+                </li>
                 <li>
                   <NavLink
                     to="/service"
@@ -82,18 +94,7 @@ const Navbar = () => {
                     about
                   </NavLink>
                 </li>
-                <li>
-                  <NavLink
-                    to="/propertyListing"
-                    className={({ isActive }) =>
-                      `capitalize block ${
-                        isActive ? "bg-[#5AA7A0] text-white" : "text-white"
-                      }  lg:border-0 lg:px-3 rounded-lg lg:pb-0.5`
-                    }
-                  >
-                    property listing
-                  </NavLink>
-                </li>
+               
                 <li>
                   <NavLink
                     to="/logIn"
